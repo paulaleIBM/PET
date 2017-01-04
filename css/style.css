@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'IBMHelveticaBold';
+  src: url('HelvNeueBoldforIBM.otf');
+}
+
+@font-face {
+  font-family: 'IBMHelveticaBoldItalic';
+  src: url('HelvNeueBoldItalicforIBM.otf');
+}
+
+@font-face {
+  font-family: 'IBMHelveticaCondensed';
+  src: url('HelvNeueCondforIBM.otf');
+}
+
+@font-face {
+  font-family: 'IBMHelveticaLightCondensed';
+  src: url('HelvNeueLightCondforIBM.otf');
+}
+
+#ibm-logo
+{
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
+  fill: #ffffff;
+}
+
+body
+{
+
+}
+
+.side-nav {
+  background: #464646;
+  width: 280px;
+  position: fixed;
+  top: 44px;
+  height: 100%;
+  color: #ffffff;
+}
+
+.mega-menu {
+  background: #464646;
+  background: #5a5a5a;
+  width: 260px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  height: 44px;
+  font-size: 14px;
+  /*position: relative:*/
+  margin: 10px;
+}
+
+.mega-menu span {
+  line-height: 44px;
+  margin: 10px;
+}
+
+
+.svg {
+  fill: #ffffff;
+  vertical-align: middle;
+}
