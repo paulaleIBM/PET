@@ -1,33 +1,96 @@
-@font-face {
-  font-family: 'IBMHelveticaBold';
-  src: url('HelvNeueBoldforIBM.otf');
+
+/* Toggle switch */
+/* The switch - the box around the slider */
+.switch {
+  /*position: relative;*/
+  position: fixed;
+  display: inline-block;
+  width: 65.225px;
+  height: 20px;
+  right: 50px; /*for main switch*/
+  margin-top: 5px; /*for main switch*/
 }
 
-@font-face {
-  font-family: 'IBMHelveticaBoldItalic';
-  src: url('HelvNeueBoldItalicforIBM.otf');
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-@font-face {
-  font-family: 'IBMHelveticaCondensed';
-  src: url('HelvNeueCondforIBM.otf');
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 2px;
+  background-color: #464646;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-@font-face {
-  font-family: 'IBMHelveticaLightCondensed';
-  src: url('HelvNeueLightCondforIBM.otf');
+input:checked + .slider {
+  background-color: #7cc7ff;
 }
 
-#ibm-logo
-{
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(43px);
+  -ms-transform: translateX(43px);
+  transform: translateX(43px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch.large-switch {
+  float: right;
+  margin-right: 20px;
+}
+
+#ibm-logo {
   margin-right: 20px;
   margin-top: 5px;
   margin-left: 20px;
   fill: #ffffff;
 }
 
+#close-my-tools-btn {
+  position: fixed;
+  right: 20px;
+  margin-top: 5px;
+}
+
+#close-my-tools-btn:hover {
+  cursor: pointer;
+}
+
+.svg {
+  fill: #ffffff;
+  vertical-align: middle;
+}
+
 body
 {
+
 
 }
 
@@ -35,12 +98,12 @@ body
   background: #464646;
   width: 280px;
   position: fixed;
-  top: 44px;
+  top: 48px;
   height: 100%;
   color: #ffffff;
 }
 
-.mega-menu {
+.my-tools-btn {
   background: #464646;
   background: #5a5a5a;
   width: 260px;
@@ -53,13 +116,56 @@ body
   margin: 10px;
 }
 
-.mega-menu span {
+.my-tools-btn span {
   line-height: 44px;
   margin: 10px;
 }
 
-
-.svg {
-  fill: #ffffff;
-  vertical-align: middle;
+.my-tools-btn:hover {
+  cursor: pointer;
+  background: #4178BE;
 }
+
+.my-tools-btn.active {
+  background: #4178BE;
+  width: 100%;
+  /*margin: 0;*/
+}
+
+.my-tools-header {
+  border-bottom: 1px solid #5a5a5a;
+  height: 40px;
+  right:20px;
+}
+
+.my-tools-container {
+  width: 100%;
+  background: #464646;
+  position: fixed;
+  bottom: 0;
+  left: 280px;
+  top: 48px;
+  border-left: 1px solid #5a5a5a;
+  visibility: hidden;
+  padding: 10px;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0.;
+  transition: visibility 0s 0s;
+}
+
+
+.my-tools-container.is-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility: 0s 0s;
+  transition: visibility 0s 0s;
+}
+
+.offering-tile {
+  background: #5a5a5a;
+}
+
+/*#ubx-container {
+  height: 190.5px;
+  width: 470px;
+}*/

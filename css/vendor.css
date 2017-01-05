@@ -187,6 +187,11 @@ pre.line-numbers > code {
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  *
  */
+ @font-face {
+   font-family: 'Helvetica Neue for IBM';
+   src: url("fonts/light/helvetica-neue-light.eot?") format("eot"), url("fonts/light/helvetica-neue-light.woff2") format("woff2"), url("fonts/light/helvetica-neue-light.woff") format("woff"), url("fonts/light/helvetica-neue-light.ttf") format("truetype");
+   font-weight: 100;
+   font-style: normal; }
 
 @font-face {
   font-family: 'Helvetica Neue for IBM';
@@ -2796,7 +2801,7 @@ mark,
 
 ul,
 ol {
-  margin: 10px; }
+/*margin: 10px;*/ }
   ul ul,
   ul ol,
   ol ul,
@@ -8747,25 +8752,24 @@ button.close {
 
 .nav-tabs {
   border-bottom: none;
-  padding-left: 20px; }
+	/*padding-left: 20px; */}
   .nav-tabs > li {
     float: left;
-    margin: 0 15px 0 0; }
+	/*margin: 0 15px 0 0;*/ }
     .nav-tabs > li:first-child {
-      margin-left: 20px; }
+		/*margin-left: 20px;*/ }
     .nav-tabs > li > h3 {
       font-weight: normal;
       margin: 0; }
     .nav-tabs > li > a,
     .nav-tabs > li > h3 a {
       text-decoration: none;
-      background-color: #FFFFFF;
       padding: 0 10px;
       margin: 0;
       line-height: 36px;
       border: none;
       border-radius: 0;
-      color: #5A5A5A;
+      color: #aeaeae;
       max-width: 250px;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -8786,9 +8790,9 @@ button.close {
     .nav-tabs > li.active > h3 a:focus {
       background-color: inherit;
       cursor: default;
-      font-weight: bold;
+      /*font-weight: bold;*/
       border: none;
-      border-bottom: 2px solid #4178BE; }
+      border-bottom: 3px solid #7cc7ff; }
     .nav-tabs > li[dropdown] > a:after {
       content: "";
       margin-left: 8px; }
