@@ -1,0 +1,17 @@
+@import "../../src/x1-ui-sass-tools";
+
+.x1-messages-demo {
+	background-color: $gray10-50;
+
+	.alert {
+		@include slide(down, 54px);
+	}
+	.dummy-section {
+		overflow: hidden;
+		margin-top: $line-height-computed / 2;
+	}
+	.dummy-article {
+		background-color: $white;
+		padding: $line-height-computed;
+	}
+}

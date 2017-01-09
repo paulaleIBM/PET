@@ -1,0 +1,15 @@
+//
+// Component animations
+// --------------------------------------------------
+
+.slide {
+	@include transition-property(margin);
+	@include transition-duration(.20s);
+	@include transition-timing-function(ease-out);
+	position: relative;
+
+	&.in {
+		@include transition-duration(.25s);
+		@include transition-timing-function(ease-in);
+	}
+}
