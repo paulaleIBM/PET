@@ -15,16 +15,18 @@ jQuery(document).ready(function($){
     $('.my-tools-btn').toggleClass('active');
   });
 
-  $('#ubx-switch').prop('checked', true);
+  /*$('#ubx-switch').prop('checked', true);*/
   $('#ubx-switch').on("change", function(event){
     if($(this).is(":checked")){
-      $('#ubx-btn').addClass('is-visible');
-      /*$('#ubx-switch').show();*/
+      /*$('#ubx-btn').addClass('is-visible');*/
+      document.getElementById('ubx-btn').style.display = 'block';
+      /*$('ubx-switch').show();*/
       console.log("checked");
     }
     else {
-      $('#ubx-btn').removeClass('is-visible');
-      /*$('#ubx-switch').hide();*/
+      /*$('#ubx-btn').removeClass('is-visible');*/
+      document.getElementById('ubx-btn').style.display = 'none';
+      /*$('ubx-switch').hide();*/
       console.log("unchecked");
     }
   });

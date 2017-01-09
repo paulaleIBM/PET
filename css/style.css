@@ -246,11 +246,11 @@ body
 }*/
 
 #ubx-btn {
-  visibility: hidden;
+  display: block;
 }
 
 #ubx-btn.is-visible {
-  visibility: visible;
+  display: none;
 }
 
 .show-sections {
