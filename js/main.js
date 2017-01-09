@@ -31,6 +31,8 @@ jQuery(document).ready(function($){
     }
   });
 
-
+  $("#ubx-show-sections").click(function(){
+    $("#ubx-inner-wrapper").slideToggle("fast");
+  });
 
 });

@@ -200,6 +200,7 @@ body
 #ubx-container {
   height: 190.5px;
   width: 470px;
+  height: auto;
 }
 
 #wca-container {
@@ -260,7 +261,6 @@ body
   text-align: center;
   color: #ffffff;
   font-size: 13px;
-
   vertical-align: middle;
   line-height: 30px;
 }
@@ -309,3 +309,13 @@ hr {
 .nav-tabs > li:first-child {
      margin-left: 0px;
      }
+
+table {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+table  > th {
+  font-weight: bold;
+}

@@ -40,7 +40,7 @@
       <div class="my-tools-btn">
         <!--<img class="svg" src="icons/Tile, Thumbnail-md.svg"/>-->
         <svg class="svg" style="margin-left:15px; margin-right:5px;" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 20 20" width="20px"><path d="M0,0h4v4H0V0z M0,12h4V8H0V12z M0,20h4v-4H0V20z M8,4h4V0H8V4z M8,12h4V8H8V12z M8,20h4v-4H8V20z M16,0v4h4V0H16z M16,12h4V8h-4V12z M16,20h4v-4h-4V20z"></path></svg>
-        <span>All Tools</span>
+        <span>All tools</span>
       </div>
 
       <nav class="w3-sidena w3-card-2" style="width: 280px">
@@ -110,22 +110,31 @@
                               <span>Show in ribbon</span>
                         		</label>
                         </div>
-                        <table>
-                          <tr>
-                            <th>In ribbon</th>
-                            <th>Sections</th>
-                            <th>Launch</th>
-                          </tr>
-                          <tr>
-                            <th></th>
-                            <th>Overview</th>
-                            <th>Open</th>
-                          </tr>
-                        </table>
+                        <div id="ubx-inner-wrapper">
+                          <table>
+                            <tr>
+                              <th style="width: 100px">In ribbon</th>
+                              <th>Sections</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="switch switch-sm">
+                                    <label for="1">
+                                      <input type="checkbox" checked="checked" value="" id="1">
+                                      <span></span>
+                                    </label>
+                                </div>
+                              </td>
+                              <td>Overview</td>
+                              <td>Open</td>
+                            </tr>
+                          </table>
+                        </div>
                       </div>
-                      <div class="show-sections">
+                      <a><div id="ubx-show-sections" class="show-sections">
                         <p>Show Sections</p>
-                      </div>
+                      </div></a>
                     </div>
                     <div id="wca-wrapper" class="wrapper">
                       <div class="offering-tile" id="wca-container">
