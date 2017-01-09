@@ -73,7 +73,7 @@ input:checked + .slider:before {
   margin-right: 20px;
   margin-top: 5px;
   margin-left: 20px;
-  fill: #ffffff;
+  fill: #c7c7c7;
 }
 
 #close-my-tools-btn {
@@ -86,9 +86,13 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
-.svg {
+svg {
   fill: #ffffff;
   vertical-align: middle;
+}
+
+#header svg {
+  fill: #c7c7c7;
 }
 
 body
@@ -101,7 +105,7 @@ body
   background: #464646;
   width: 280px;
   position: fixed;
-  top: 48px;
+  top: 45px;
   height: 100%;
   color: #ffffff;
 }
@@ -152,7 +156,7 @@ body
   position: fixed;
   bottom: 0;
   left: 280px;
-  top: 48px;
+  top: 45px;
   border-left: 1px solid #5a5a5a;
   visibility: hidden;
   -webkit-transition: visibility 0s 0s;
@@ -172,7 +176,7 @@ body
 .offering-tile {
   background: #5a5a5a;
   /*margin: 20px;*/
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   font-size: 13px;
   overflow: hidden;
 }
@@ -230,7 +234,27 @@ body
   text-align: center;
   color: #aeaeae;
   font-size: 11px;
+  margin-bottom: 20px;
+}
 
+.open-link {
+  border: 1px solid #c0e6ff;
+  color: #c0e6ff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 11px;
+  width: 68px;
+  float: right;
+}
+
+.upgrade-link {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 11px;
+  width: 121px;
+  float: right;
 }
 
 #watson-marketing-tools {
@@ -275,6 +299,11 @@ body
 hr {
   border-top: 1px solid #777677;
   margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.switch {
+  margin-bottom: 20px;
 }
 
 .switch label {
@@ -312,10 +341,11 @@ hr {
 
 table {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 100;
 }
 
 table  > th {
+  font-size: 14px;
   font-weight: bold;
 }
