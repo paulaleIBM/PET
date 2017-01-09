@@ -18,22 +18,46 @@ jQuery(document).ready(function($){
   /*$('#ubx-switch').prop('checked', true);*/
   $('#ubx-switch').on("change", function(event){
     if($(this).is(":checked")){
-      /*$('#ubx-btn').addClass('is-visible');*/
       document.getElementById('ubx-btn').style.display = 'block';
-      /*$('ubx-switch').show();*/
       console.log("checked");
     }
     else {
-      /*$('#ubx-btn').removeClass('is-visible');*/
       document.getElementById('ubx-btn').style.display = 'none';
-      /*$('ubx-switch').hide();*/
       console.log("unchecked");
     }
   });
 
   $("#ubx-show-sections").click(function(){
     $("#ubx-inner-wrapper").slideToggle("fast");
-    
   });
 
+  $('#ubx-1').on("change", function(event){
+    if($(this).is(":checked")){
+      document.getElementById('ubx-dashboards').style.display = 'block';
+    }
+    else {
+      document.getElementById('ubx-dashboards').style.display = 'none';
+      console.log("unchecked");
+    }
+  });
+
+  $('#ubx-2').on("change", function(event){
+    if($(this).is(":checked")){
+      document.getElementById('ubx-workspaces').style.display = 'block';
+    }
+    else {
+      document.getElementById('ubx-workspaces').style.display = 'none';
+      console.log("unchecked");
+    }
+  });
+
+  $('#ubx-3').on("change", function(event){
+    if($(this).is(":checked")){
+      document.getElementById('ubx-da').style.display = 'block';
+    }
+    else {
+      document.getElementById('ubx-da').style.display = 'none';
+      console.log("unchecked");
+    }
+  });
 });

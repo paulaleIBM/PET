@@ -257,6 +257,14 @@ body
   float: right;
 }
 
+.side-nav .nav-item a {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
 #watson-marketing-tools {
   visibility: hidden;
 }
