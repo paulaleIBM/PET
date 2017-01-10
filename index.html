@@ -13,7 +13,13 @@
 
 <body>
   <nav class="collapse navbar-collapse navbar-inverse">
-  <a class="navbar-brand" href="#">Watson Marketing</a>
+
+  <a class="navbar-brand" href="#"><svg id="hambuger" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 20 16" width="16px"><path d="M0,7h20v2H0V7z M0,0v2h20V0H0z M0,16h20v-2H0V16z"></path></svg></a>
+  <!--<a class="nav-link" id="title">Watson Customer Engagement</a>-->
+  <h1 id="x1TopNavBrand" class="navbar-brand" role="button" tabindex="0">
+    <a href="#" style="margin-top: -18px; font-weight: 700;">Watson Customer Engagement</a>
+  </h1>
+
   <ul class="nav navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">Notifications <span class="sr-only">(current)</span></a>
@@ -67,25 +73,25 @@
       <div class="my-tools-container">
         <div class="my-tools-header">
           <svg class="svg" id="close-my-tools-btn" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 20 20" width="20px"><path d="M11.1,10l8.9,8.9L18.9,20L10,11.1L1.1,20L0,18.9L8.9,10L0,1.1L1.1,0L10,8.9L18.9,0L20,1.1L11.1,10z"></path></svg>
-          <label class="switch large-switch">
+          <!--<label class="switch large-switch">
             <input type="checkbox">
             <div class="slider round"></div>
-          </label>
+          </label>-->
 
           <!-- IBM Switch -->
-          <!--<div class="switch switch-sm">
-          		<label for="switch14">
-          			<input type="checkbox" checked="checked" value="" id="switch14">
+          <div class="switch switch-sm" id="my-tools-switch">
+          		<label for="mytoolsswitch">
+          			<input type="checkbox" checked="checked" value="" id="mytoolsswitch">
           			<span></span>
           		</label>
-          </div>-->
+          </div>
 
-          <p style="position: fixed; right: 150px; margin-top: 5px; font-size: 15px; font-weight: 100;">Show only my tools</p>
+          <p style="position: fixed; right: 140px; margin-top: 5px; font-size: 15px; font-weight: 100;">Show only my tools</p>
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist" style="font-weight:bold; margin-top: 0">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span style="font-weight:100">IBM</span> Watson Marketing</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span style="font-weight:100">IBM</span> Watson Commerce</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span style="font-weight:100">IBM</span> Watson Supply Chain</a></li>
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Watson Marketing</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Watson Commerce</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Watson Supply Chain</a></li>
           </ul>
         </div>
 
@@ -99,10 +105,9 @@
                     <div class="offering-tile" id="ubx-container">
                         <div class="offering-tile-header">
                             <h4><span style="font-weight: 100">IBM</span> Universal Behavior Exchange</h4>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="basic-edition">Basic edition</p>
                         </div>
-                        <p class="permissions-authorized">Authorized</p>
-                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                         <div class="switch switch-sm">
                         		<label for="ubx-switch">
                         			<input type="checkbox" checked="checked" value="" id="ubx-switch">
@@ -111,7 +116,6 @@
                         		</label>
                         </div>
                         <div id="ubx-inner-wrapper">
-                          <hr>
                           <table>
                             <tr>
                               <th style="width: 100px">In ribbon</th>
@@ -158,7 +162,7 @@
                         </div>
                       </div>
                       <a><div id="ubx-show-sections" class="show-sections">
-                        <p>Show Sections</p>
+                        <p id="ubx-show-sections-label">Show Sections</p>
                       </div></a>
                     </div>
                     <div id="wca-wrapper" class="wrapper">
