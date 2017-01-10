@@ -388,3 +388,30 @@ table  > th {
   font-size: 14px;
   font-weight: bold;
 }
+
+.dropdown a {
+  color: #c7c7c7;
+  font-weight: 700;
+  font-size: 12px;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.dropdown-menu {
+  box-shadow: none;
+  background-color: #464646;
+  position: relative;
+  width: 100%;
+  overflow-y: visible;
+  height: auto;
+  max-height: none;
+}
+
+.dropdown-menu > li > a {
+  color: #ffffff;
+  font-size: 15px;
+  border-bottom: none;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #464646;
+}

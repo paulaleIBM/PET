@@ -24,14 +24,17 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Notifications <span class="sr-only">(current)</span></a>
     </li>
-    <li class="nav-item dropdown">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Evan</a>
+    </li>
+    <!--<li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="http://example.com" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evan</a>
       <div class="dropdown-menu" aria-labelledby="supportedContentDropdown">
         <a class="dropdown-item" href="#">Action</a>
         <a class="dropdown-item" href="#">Another action</a>
         <a class="dropdown-item" href="#">Something else here</a>
       </div>
-    </li>
+    </li>-->
     <li class="nav-item">
       <a class="nav-link" href="#">Help</a>
     </li>
@@ -49,7 +52,60 @@
         <span>All tools</span>
       </div>
 
-      <nav class="w3-sidena w3-card-2" style="width: 280px">
+      <ul class="nav sidebar-nav">
+        <li id="ubx-btn" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Universal Behavior Exchange</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li id="ca-btn" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Campaign Automation</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Workspaces</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Social campaigns</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Landing Page</a></li>
+            <li><a href="#">Performance Snapshot</a></li>
+            <li><a href="#">Goals</a></li>
+            <li><a href="#">Journey design</a></li>
+            <li><a href="#">Asset library</a></li>
+            <li><a href="#">Score</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Audience and segments</a></li>
+            <li><a href="#">Database admin</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Developer resources</a></li>
+          </ul>
+        </li>
+        <li id="cxa-btn" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Watson Customer Experience Analytics</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li id="mi-btn" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Watson Marketing Insights</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li id="realtime-btn" class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Watson Real-Time Personalization</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <!--<nav class="w3-sidena w3-card-2" style="width: 280px">
         <div id="ubx-btn" class="w3-accordion nav-item">
           <a onclick="myAccFunc()" href="#">IBM Universal Behavior Exchange</a>
           <div id="demoAcc" class="w3-accordion-content w3-white w3-card-4">
@@ -67,7 +123,7 @@
           </div>
         </div>
 
-      </nav>
+      </nav>-->
 
 
       <div class="my-tools-container">
@@ -212,6 +268,7 @@
 
   </script>
   <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
