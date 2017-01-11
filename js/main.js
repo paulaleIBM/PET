@@ -28,7 +28,11 @@ jQuery(document).ready(function($){
   });
 
   $("#ubx-show-sections").click(function(){
-    $("#ubx-inner-wrapper").slideToggle("fast");
+    $("#ubx-section-wrapper").slideToggle("fast");
+  });
+
+  $("#ubx-show-addon").click(function(){
+    $("#ubx-addon-wrapper").slideToggle("fast");
   });
 
   $('#ubx-1').on("change", function(event){

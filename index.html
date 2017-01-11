@@ -14,7 +14,7 @@
 <body>
   <nav class="collapse navbar-collapse navbar-inverse">
 
-  <a class="navbar-brand" href="#"><svg id="hambuger" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 20 16" width="16px"><path d="M0,7h20v2H0V7z M0,0v2h20V0H0z M0,16h20v-2H0V16z"></path></svg></a>
+  <a class="navbar-brand" href="#" style="width: 64px;"><svg id="hamburger" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 20 16" width="16px"><path d="M0,7h20v2H0V7z M0,0v2h20V0H0z M0,16h20v-2H0V16z"></path></svg></a>
   <!--<a class="nav-link" id="title">Watson Customer Engagement</a>-->
   <h1 id="x1TopNavBrand" class="navbar-brand" role="button" tabindex="0">
     <a href="#" style="margin-top: -18px; font-weight: 700;">Watson Customer Engagement</a>
@@ -148,8 +148,8 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist" style="font-weight:bold; margin-top: 0">
             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Watson Marketing</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Watson Commerce</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Watson Supply Chain</a></li>
+            <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Watson Commerce</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Watson Supply Chain</a></li>-->
           </ul>
         </div>
 
@@ -179,7 +179,7 @@
                           <p id="ubx-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
                         </div></a>
 
-                        <div id="ubx-inner-wrapper">
+                        <div id="ubx-section-wrapper">
                           <table>
                             <tr>
                               <th style="width: 100px">In ribbon</th>
@@ -225,9 +225,14 @@
                           </table>
                         </div>
 
-                        <a><div id="ubx-show-sections" class="show-sections">
-                          <p id="ubx-show-sections-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
+                        <a><div id="ubx-show-addon" class="show-sections">
+                          <p id="ubx-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
                         </div></a>
+                        <div id="ubx-addon-wrapper">
+                          <br><br><br>
+                          UBX add-ons go in this section
+                          <br><br><br>
+                        </div>
                       </div><!-- end ubx offering tile container -->
 
                     </div>

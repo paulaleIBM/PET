@@ -112,6 +112,10 @@ svg {
   padding:
 }
 
+#hamburger {
+  margin-left: 12px;
+}
+
 body
 {
 
@@ -127,13 +131,19 @@ body
   color: #ffffff;
 }
 
+.sidebar-nav ul, ol {
+  margin: 0;
+}
+
 .sidebar-nav {
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 0;
   height: 850px;
   bottom: 0;
   overflow-y: scroll;
   /*padding-left: 20px;*/
 }
+
+
 
 #ubx-menu-item {
   border-left: 3px solid #7cc7ff;
@@ -311,6 +321,7 @@ body
 
 #ubx-btn {
   display: block;
+  border-left: 3px solid #7cc7ff;
 }
 
 #ubx-btn.is-visible {
@@ -332,6 +343,11 @@ body
 
 
 /*Overriden bootstrap components*/
+
+.navbar-brand {
+    height: 45px;
+}
+
 .nav-tabs > li > a,
     .nav-tabs > li > h3 a {
       color: #aeaeae;
@@ -429,6 +445,8 @@ table  > th {
   height: auto;
   max-height: none;
   z-index: 99;
+  left: -3px;
+  border-left: 3px solid #7cc7ff;
 }
 
 .dropdown-menu > li > a {
