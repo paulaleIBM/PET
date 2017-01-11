@@ -128,7 +128,10 @@ body
 }
 
 .sidebar-nav {
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
+  height: 850px;
+  bottom: 0;
+  overflow-y: scroll;
   /*padding-left: 20px;*/
 }
 
@@ -179,7 +182,7 @@ body
 
 .my-tools-container {
   width: 100%;
-  height: 900px;
+  height: auto;
   background: #464646;
   position: fixed;
   bottom: 0;
@@ -318,12 +321,13 @@ body
   width: 470px;
   height: 30px;
   background: #777677;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   font-size: 13px;
   vertical-align: middle;
   line-height: 30px;
   margin-left: -20px;
+  /*padding-left: 20px;*/
 }
 
 
