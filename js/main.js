@@ -15,7 +15,6 @@ jQuery(document).ready(function($){
     $('.my-tools-btn').toggleClass('active');
   });
 
-  /*$('#ubx-switch').prop('checked', true);*/
   $('#ubx-switch').on("change", function(event){
     if($(this).is(":checked")){
       document.getElementById('ubx-btn').style.display = 'block';
@@ -70,4 +69,11 @@ jQuery(document).ready(function($){
      "click":             function() { this.closable = true; },
      "hide.bs.dropdown":  function() { return this.closable; }
   });
+
+  $(function() {
+      $( "#sortable" ).sortable({
+          placeholder: "ui-sortable-placeholder"
+      });
+  });
+
 });

@@ -53,9 +53,9 @@
       </div>
 
       <div class="sidebar-nav">
-        <ul class="nav">
-            <li id="ubx-btn" class="dropdown keep-open"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Universal Behavior Exchange</a>
-              <ul class="dropdown-menu">
+        <ul class="nav" id="sortable">
+            <li id="ubx-btn" class="dropdown keep-open" draggable="true"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Universal Behavior Exchange</a>
+              <ul class="dropdown-menu" ng-click="$event.stopPropagation()">
                 <li><a href="#" id="ubx-dashboards">Overview</a></li>
                 <li><a href="#" id="ubx-workspaces">Workspaces</a></li>
                 <li><a href="#" id="ubx-da">Digital Analysis</a></li>
@@ -261,12 +261,9 @@
           <div role="tabpanel" class="tab-pane" id="messages"></div>
           <div role="tabpanel" class="tab-pane" id="settings"></div>
         </div><!-- End Tab panes -->
-
-
-
-
       </div> <!-- End my tools container -->
     </div> <!-- End side nav -->
+</div>
   <script>
     function myAccFunc() {
         var x = document.getElementById("demoAcc");
@@ -283,6 +280,7 @@
 
   </script>
   <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
