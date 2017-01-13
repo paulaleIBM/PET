@@ -28,10 +28,12 @@ jQuery(document).ready(function($){
 
   $("#ubx-show-sections").click(function(){
     $("#ubx-section-wrapper").slideToggle("fast");
+    $("#ubx-show-sections-label").text( $("#ubx-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
   });
 
   $("#ubx-show-addon").click(function(){
     $("#ubx-addon-wrapper").slideToggle("fast");
+    $("#ubx-show-addon-label").text( $("#ubx-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
   });
 
   $('#ubx-1').on("change", function(event){
@@ -77,8 +79,8 @@ jQuery(document).ready(function($){
   });
 
   $(function() {
-      $("#ubx-sortable").sortable({
-      /*$("#ubx-sortable").disableSelection();*/
+      $( "#ubx-sortable" ).sortable({
+          placeholder: "ui-sortable-placeholder"
       });
   });
 

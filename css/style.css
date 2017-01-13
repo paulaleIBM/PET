@@ -8,7 +8,6 @@
   /*position: relative;*/
   display: inline-block;
   height: 20px;
-  right: 443px; /*for main switch*/
   margin-top: 5px; /*for main switch*/
 }
 
@@ -70,8 +69,8 @@ input:checked + .slider:before {
 }
 
 #my-tools-switch {
-  position: fixed;
   float: right;
+  margin-right: 10px;
 }
 
 /* xsmall switch*/
@@ -111,9 +110,9 @@ input:checked + .slider:before {
 }
 
 #close-my-tools-btn {
-  position: fixed;
-  right: 412px;
+  float: right;
   margin-top: 5px;
+  margin-right: 10px;
 }
 
 #close-my-tools-btn:hover {
