@@ -8,7 +8,7 @@
   /*position: relative;*/
   display: inline-block;
   height: 20px;
-  right: 50px; /*for main switch*/
+  right: 443px; /*for main switch*/
   margin-top: 5px; /*for main switch*/
 }
 
@@ -83,7 +83,7 @@ input:checked + .slider:before {
 
 #close-my-tools-btn {
   position: fixed;
-  right: 20px;
+  right: 412px;
   margin-top: 5px;
 }
 
@@ -183,7 +183,7 @@ body
 .my-tools-header {
   /*border-bottom: 1px solid #5a5a5a;*/
   height: 50px;
-  width: 100%;
+  width: 999px;
   position: fixed;
   z-index: 100;
   background: #464646;
@@ -191,7 +191,7 @@ body
 }
 
 .my-tools-container {
-  width: 100%;
+  width: 1000px;
   height: auto;
   background: #464646;
   position: fixed;
@@ -286,6 +286,12 @@ body
   font-size: 11px;
   width: 68px;
   float: right;
+  cursor: pointer;
+}
+
+.open-link:hover {
+  background: #ffffff;
+  color: #5a5a5a;
 }
 
 .upgrade-link {
@@ -296,6 +302,12 @@ body
   font-size: 11px;
   width: 121px;
   float: right;
+  cursor: pointer;
+}
+
+.upgrade-link:hover {
+  background: #c0e6ff;
+  color: #5a5a5a;
 }
 
 .side-nav .nav-item a {
@@ -402,6 +414,7 @@ hr {
 .nav-tabs > li.active > h3 a:hover,
 .nav-tabs > li.active > h3 a:focus {
     padding-bottom: 2px;
+    font-size: 15px;
   }
 
 .col-lg-6 {

@@ -76,4 +76,10 @@ jQuery(document).ready(function($){
       });
   });
 
+  $(function() {
+      $("#ubx-sortable").sortable({
+      /*$("#ubx-sortable").disableSelection();*/
+      });
+  });
+
 });
