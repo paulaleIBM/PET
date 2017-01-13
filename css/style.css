@@ -74,6 +74,35 @@ input:checked + .slider:before {
   float: right;
 }
 
+/* xsmall switch*/
+.switch.switch-xs input[type="checkbox"]:checked + span,
+.switch-inline.switch-sm input[type="checkbox"]:checked + span {
+  padding-left: 36px; }
+
+.switch.switch-xs input[type="checkbox"] + span,
+.switch-inline.switch-xs input[type="checkbox"] + span {
+  height: 16px;
+  width: 50px;
+  padding: 0;
+  transition: padding 0.3s ease, background 0.3s ease; }
+  .switch.switch-xs input[type="checkbox"] + span::before,
+  .switch-inline.switch-xs input[type="checkbox"] + span::before {
+    line-height: 14px;
+    font-size: 14px; }
+  .switch.switch-xs input[type="checkbox"] + span::after,
+  .switch-inline.switch-xs input[type="checkbox"] + span::after {
+    width: 10px;
+    height: 10px;
+    margin-left: 2px; }
+
+  .glyphicon, .checkbox input[type="checkbox"] + span::after,
+  .checkbox-inline input[type="checkbox"] + span::after, .switch input[type="checkbox"] + span,
+  .switch-inline input[type="checkbox"] + span, .breadcrumb > li + li:before, .alert:before, .alert-dismissable .close:before,
+  .alert-dismissible .close:before {
+    font-family: "UX1 Glyphicons";
+    font-size: 10px;
+    color: #777677; }
+
 #ibm-logo {
   margin-right: 20px;
   margin-top: 5px;
@@ -402,7 +431,7 @@ hr {
 
 .switch input[type="checkbox"]:checked + span,
 .switch-inline input[type="checkbox"]:checked + span {
-  padding-left: 40px;
+  padding-left: 38px;
   background: #323232; }
 
 .switch input[type="checkbox"] + span::after,
