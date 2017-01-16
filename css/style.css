@@ -311,18 +311,21 @@ body
 }
 
 #cxa-container {
-  height: 175px;
+  /*height: 175px;*/
   width: 470px;
+  height: auto;
 }
 
 #realtime-container {
-  height: 220px;
+  /*height: 220px;*/
   width: 470px;
+  height: auto;
 }
 
 #mi-container {
-  height: 335px;
+  /*height: 335px;*/
   width: 470px;
+  height: auto;
 }
 
 .basic-edition {
@@ -392,7 +395,7 @@ body
 
 #ubx-btn {
   display: block;
-  border-left: 3px solid #7cc7ff;
+  border-left: 3px solid #fde876;
 }
 
 #ubx-btn.is-visible {
@@ -525,7 +528,7 @@ table  > th {
   max-height: none;
   z-index: 99;
   left: -3px;
-  border-left: 3px solid #7cc7ff;
+  border-left: 3px solid #fde876;
 }
 
 .dropdown-menu > li > a {
