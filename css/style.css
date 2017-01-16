@@ -252,18 +252,46 @@ body
 }
 
 .offering-tile-header {
-  color: #ffffff;
+  /*color: #ffffff;
   padding: 1px;
   padding-left: 12px;
   border-left: 3px solid #7cc7ff;
-  margin-bottom: 20px;
+  margin-bottom: 20px;*/
 }
 
-.offering-tile-header > h4 {
+.offering-tile-header h4 {
   font-size: 20px;
   color: #ffffff;
   margin-top: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.bar {
+  float: left;
+  width: 3px;
+  height: 55px;
+  margin-right: 10px;
+}
+
+.blue {
+  background: #7cc7ff;
+}
+
+.purple {
+  background: #d7aaff;
+}
+
+.green {
+  background: #b4e051;
+}
+
+.orange {
+  background: #ffa573;
+}
+
+.yellow {
+  background: #fde876;
 }
 
 .wrapper {
@@ -271,14 +299,15 @@ body
 }
 
 #ubx-container {
-  height: 190.5px;
+  /*height: 190.5px;*/
   width: 470px;
   height: auto;
 }
 
 #wca-container {
-  height: 829px;
+  /*height: 895px;*/
   width: 470px;
+  height: auto;
 }
 
 #cxa-container {
@@ -304,6 +333,8 @@ body
   color: #ffffff;
   font-size: 11px;
   margin-bottom: 20px;
+  margin-left: 12px;
+  margin-top: 5px;
 }
 
 .open-link {
@@ -381,7 +412,7 @@ body
   /*padding-left: 20px;*/
 }
 
-#ubx-addon-wrapper {
+#ubx-addon-wrapper, #wca-addon-wrapper {
   display: none;
 }
 
@@ -426,6 +457,10 @@ hr {
 .switch label {
   color: #ffffff;
   font-weight: bold;
+}
+
+td .switch {
+  margin: 8px;
 }
 
 .switch input[type="checkbox"]:checked + span,

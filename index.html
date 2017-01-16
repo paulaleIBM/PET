@@ -61,7 +61,7 @@
                 <li><a href="#" id="ubx-da">Digital Analysis</a></li>
               </ul>
             </li>
-          <li id="ca-btn" class="dropdown keep-open"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Campaign Automation</a>
+          <li id="ca-btn" class="dropdown keep-open"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Watson Campaign Automation</a>
             <ul class="dropdown-menu">
               <li><a href="#">Overview</a></li>
               <li><a href="#">Workspaces</a></li>
@@ -158,14 +158,260 @@
         <div class="tab-content" style="color: #000000;">
           <div role="tabpanel" class="tab-pane active" id="watson-marketing-tools">
             <div class="row" style="margin-top: 30px;">
-                <div class="col-lg-6">
+                <div class="col-xs-6">
+
+                  <!-- Watson Campaign Automation -->
+                  <div id="wca-wrapper" class="wrapper">
+                    <div class="offering-tile" id="wca-container">
+                      <div class="offering-tile-header">
+                          <div class="bar blue"></div>
+                          <svg class="svg more-icon" xmlns="http://www.w3.org/2000/svg" height="4px" viewBox="0 0 16 4" width="16px"><path d="M3.2,1.6c0,0.9-0.7,1.6-1.6,1.6S0,2.5,0,1.6S0.7,0,1.6,0S3.2,0.7,3.2,1.6z M8,0C7.1,0,6.4,0.7,6.4,1.6S7.1,3.2,8,3.2s1.6-0.7,1.6-1.6S8.9,0,8,0z M14.4,0c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6S16,2.5,16,1.6S15.3,0,14.4,0z"></path></svg>
+                          <h4>Watson Campaign Automation</h4>
+                          <p class="basic-edition">Basic edition</p>
+                      <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                      <div class="switch switch-xs">
+                          <label for="wca-switch">
+                            <input type="checkbox" checked="checked" value="" id="wca-switch">
+                            <span></span>
+                            <span>Show in ribbon</span>
+                          </label>
+                      </div>
+                      <a><div id="wca-show-sections" class="show-sections">
+                        <p id="wca-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
+                      </div></a>
+                      <div id="wca-section-wrapper">
+                        <table>
+                          <tr>
+                            <th style="width: 100px">In ribbon</th>
+                            <th>Sections</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-1">
+                                    <input type="checkbox" checked="checked" value="" id="ca-1">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Overview</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-2">
+                                    <input type="checkbox" checked="checked" value="" id="ca-2">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Workspaces</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-3">
+                                    <input type="checkbox" checked="checked" value="" id="ca-3">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Programs</td>
+                            <td><p class="upgrade-link">Upgrade  options</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-4">
+                                    <input type="checkbox" checked="checked" value="" id="ca-4">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Social campaigns</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-5">
+                                    <input type="checkbox" checked="checked" value="" id="ca-5">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Mobile</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-6">
+                                    <input type="checkbox" checked="checked" value="" id="ca-6">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Email</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-7">
+                                    <input type="checkbox" checked="checked" value="" id="ca-7">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Landing page</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-8">
+                                    <input type="checkbox" checked="checked" value="" id="ca-8">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Performance snapshot</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-9">
+                                    <input type="checkbox" checked="checked" value="" id="ca-9">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Goals</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-10">
+                                    <input type="checkbox" checked="checked" value="" id="ca-10">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Journey Design</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-11">
+                                    <input type="checkbox" checked="checked" value="" id="ca-11">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Asset Library</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-12">
+                                    <input type="checkbox" checked="checked" value="" id="ca-12">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Score</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-13">
+                                    <input type="checkbox" checked="checked" value="" id="ca-13">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Alerts</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-14">
+                                    <input type="checkbox" checked="checked" value="" id="ca-14">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Audience and segments</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-15">
+                                    <input type="checkbox" checked="checked" value="" id="ca-15">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Database admin</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-16">
+                                    <input type="checkbox" checked="checked" value="" id="ca-16">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Resources</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="switch switch-xs">
+                                  <label for="ca-17">
+                                    <input type="checkbox" checked="checked" value="" id="ca-17">
+                                    <span></span>
+                                  </label>
+                              </div>
+                            </td>
+                            <td>Developer resources</td>
+                            <td><p class="open-link">Open</p></td>
+                          </tr>
+                        </table>
+                      </div> <!-- end wca-section-wrapper -->
+                      <a><div id="wca-show-addon" class="show-sections">
+                        <p id="wca-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
+                      </div></a>
+                      <div id="wca-addon-wrapper">
+                        <br><br><br>
+                        Add-ons go in this section
+                        <br><br><br>
+                      </div>
+                    </div> <!-- end offering-tile-header -->
+                    </div><!-- end wca-container -->
+                  </div><!-- end wca-wrapper -->
+
+                  <!-- Universal Behavior Exchange -->
                   <div id="ubx-wrapper" class="wrapper">
                     <div class="offering-tile" id="ubx-container">
                         <div class="offering-tile-header">
+                            <div class="bar blue"></div>
                             <svg class="svg more-icon" xmlns="http://www.w3.org/2000/svg" height="4px" viewBox="0 0 16 4" width="16px"><path d="M3.2,1.6c0,0.9-0.7,1.6-1.6,1.6S0,2.5,0,1.6S0.7,0,1.6,0S3.2,0.7,3.2,1.6z M8,0C7.1,0,6.4,0.7,6.4,1.6S7.1,3.2,8,3.2s1.6-0.7,1.6-1.6S8.9,0,8,0z M14.4,0c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6S16,2.5,16,1.6S15.3,0,14.4,0z"></path></svg>
-                            <h4><span style="font-weight: 100">IBM</span> Universal Behavior Exchange</h4>
+                            <h4>Universal Behavior Exchange</h4>
                             <p class="basic-edition">Basic edition</p>
-                        </div>
                         <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                         <div class="switch switch-xs">
                         		<label for="ubx-switch">
@@ -223,38 +469,34 @@
                               <td><p class="upgrade-link">Upgrade  options</p></td>
                             </tr>
                           </table>
-                        </div>
+                        </div><!-- end ubx-section-wrapper -->
 
                         <a><div id="ubx-show-addon" class="show-sections">
                           <p id="ubx-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
                         </div></a>
                         <div id="ubx-addon-wrapper">
                           <br><br><br>
-                          UBX add-ons go in this section
+                          Add-ons go in this section
                           <br><br><br>
-                        </div>
-                      </div><!-- end ubx offering tile container -->
-
-                    </div>
-                    <div id="wca-wrapper" class="wrapper">
-                      <div class="offering-tile" id="wca-container">
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
+                        </div><!-- end ubx-addon-wrapper -->
+                      </div><!-- end offering-tile-header -->
+                    </div><!-- end ubx-container -->
+                </div><!-- end ubx-wrapper -->
+              </div><!-- end col-xs-6 -->
+                <div class="col-xs-6" style="margin-left: -15px;">
                     <div id="cxa-wrapper" class="wrapper">
                       <div class="offering-tile" id="cxa-container">
-                      </div>
-                    </div>
+                      </div><!-- end cxa-container -->
+                    </div><!-- end cxa-wrapper -->
                     <div id="realtime-wrapper" class="wrapper">
                       <div class="offering-tile" id="realtime-container">
                       </div>
                     </div>
                     <div id="mi-wrapper" class="wrapper">
                       <div class="offering-tile" id="mi-container">
-                      </div>
-                    </div>
-                </div>
+                      </div><!-- end mi-container -->
+                    </div><!-- end mi-wrapper -->
+                </div><!-- end col-xs-6 -->
             </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="profile"></div>

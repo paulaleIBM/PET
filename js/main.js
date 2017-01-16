@@ -36,6 +36,16 @@ jQuery(document).ready(function($){
     $("#ubx-show-addon-label").text( $("#ubx-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
   });
 
+  $("#wca-show-sections").click(function(){
+    $("#wca-section-wrapper").slideToggle("fast");
+    $("#wca-show-sections-label").text( $("#wca-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
+  });
+
+  $("#wca-show-addon").click(function(){
+    $("#wca-addon-wrapper").slideToggle("fast");
+    $("#wca-show-addon-label").text( $("#wca-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
+  });
+
   $('#ubx-1').on("change", function(event){
     if($(this).is(":checked")){
       document.getElementById('ubx-dashboards').style.display = 'block';
@@ -74,13 +84,13 @@ jQuery(document).ready(function($){
 
   $(function() {
       $( "#sortable" ).sortable({
-          placeholder: "ui-sortable-placeholder"
+
       });
   });
 
   $(function() {
       $( "#ubx-sortable" ).sortable({
-          placeholder: "ui-sortable-placeholder"
+
       });
   });
 
