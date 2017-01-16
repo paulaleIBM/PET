@@ -26,6 +26,7 @@ jQuery(document).ready(function($){
     }
   });
 
+  /* UBX hide/show sections */
   $("#ubx-show-sections").click(function(){
     $("#ubx-section-wrapper").slideToggle("fast");
     $("#ubx-show-sections-label").text( $("#ubx-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
@@ -36,6 +37,7 @@ jQuery(document).ready(function($){
     $("#ubx-show-addon-label").text( $("#ubx-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
   });
 
+  /* WCA hide/show sections */
   $("#wca-show-sections").click(function(){
     $("#wca-section-wrapper").slideToggle("fast");
     $("#wca-show-sections-label").text( $("#wca-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
@@ -44,6 +46,39 @@ jQuery(document).ready(function($){
   $("#wca-show-addon").click(function(){
     $("#wca-addon-wrapper").slideToggle("fast");
     $("#wca-show-addon-label").text( $("#wca-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
+  });
+
+  /* CXA hide/show sections */
+  $("#cxa-show-sections").click(function(){
+    $("#cxa-section-wrapper").slideToggle("fast");
+    $("#cxa-show-sections-label").text( $("#cxa-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
+  });
+
+  $("#cxa-show-addon").click(function(){
+    $("#cxa-addon-wrapper").slideToggle("fast");
+    $("#cxa-show-addon-label").text( $("#cxa-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
+  });
+
+  /* Realtime hide/show sections */
+  $("#realtime-show-sections").click(function(){
+    $("#realtime-section-wrapper").slideToggle("fast");
+    $("#realtime-show-sections-label").text( $("#realtime-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
+  });
+
+  $("#realtime-show-addon").click(function(){
+    $("#realtime-addon-wrapper").slideToggle("fast");
+    $("#realtime-show-addon-label").text( $("#realtime-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
+  });
+
+  /* MI hide/show sections */
+  $("#mi-show-sections").click(function(){
+    $("#mi-section-wrapper").slideToggle("fast");
+    $("#mi-show-sections-label").text( $("#mi-show-sections-label").text() == '+ Show sections' ? "- Hide sections" : "+ Show sections");
+  });
+
+  $("#mi-show-addon").click(function(){
+    $("#mi-addon-wrapper").slideToggle("fast");
+    $("#mi-show-addon-label").text( $("#mi-show-addon-label").text() == '- Hide add-ons' ? "+ Show add-ons" : "- Hide add-ons");
   });
 
   $('#ubx-1').on("change", function(event){
