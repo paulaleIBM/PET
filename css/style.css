@@ -232,6 +232,7 @@ body
   -moz-transition: visibility 0s 0.;
   transition: visibility 0s 0s;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -415,7 +416,11 @@ body
   /*padding-left: 20px;*/
 }
 
-#ubx-addon-wrapper, #wca-addon-wrapper {
+#ubx-addon-wrapper, #wca-addon-wrapper, #realtime-addon-wrapper, #mi-addon-wrapper, #cxa-addon-wrapper {
+  display: none;
+}
+
+#mi-section-wrapper, #realtime-section-wrapper {
   display: none;
 }
 
