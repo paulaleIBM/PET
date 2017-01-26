@@ -22,10 +22,16 @@
 
   <ul class="nav navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Notifications <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">
+        <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 16 20" width="16px"><path d="M10.8,15.3l4.3-4.4l0.8,0.9L10.8,17L8,14.2l0.8-0.9L10.8,15.3z M13,19H1V1h8v4h4v6h1V5V4l-4-4H0v20h14v-1v-1h-1V19z"></path></svg>Notifications
+        <span class="sr-only">(current)</span>
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Evan</a>
+      <a class="nav-link" href="#">
+        <svg style="margin-right: 10px;" xmln="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 16 20" width="16px"><path d="M16,17.3V20H0v-2.7C0,15.8,1.1,15,2.5,15h10.9C14.9,15,16,15.8,16,17.3z M1.6,6.4c0,3.5,2.8,6.4,6.4,6.4s6.4-2.8,6.4-6.4S11.5,0,8,0S1.6,2.8,1.6,6.4z"></path></svg>
+        Evan
+      </a>
     </li>
     <!--<li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="http://example.com" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evan</a>
@@ -54,32 +60,25 @@
 
       <div class="sidebar-nav">
         <ul class="nav" id="sortable">
-            <li id="ubx-btn" class="dropdown keep-open" draggable="true"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Universal Behavior Exchange</a>
-              <ul class="dropdown-menu yellow-ribbon" ng-click="$event.stopPropagation()" id="ubx-sortable">
-                <li><a href="#" id="ubx-dashboards">Overview</a></li>
-                <li><a href="#" id="ubx-workspaces">Workspaces</a></li>
-                <li><a href="#" id="ubx-da">Digital Analysis</a></li>
-              </ul>
-            </li>
           <li id="wca-btn" class="dropdown keep-open"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Watson Campaign Automation</a>
             <ul class="dropdown-menu blue-ribbon">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Workspaces</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Social campaigns</a></li>
-              <li><a href="#">Mobile</a></li>
-              <li><a href="#">Email</a></li>
-              <li><a href="#">Landing Page</a></li>
-              <li><a href="#">Performance Snapshot</a></li>
-              <li><a href="#">Goals</a></li>
-              <li><a href="#">Journey design</a></li>
-              <li><a href="#">Asset library</a></li>
-              <li><a href="#">Score</a></li>
-              <li><a href="#">Alerts</a></li>
-              <li><a href="#">Audience and segments</a></li>
-              <li><a href="#">Database admin</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Developer resources</a></li>
+              <li><a id="wca-overview-btn" href="#">Overview</a></li>
+              <li><a id="wca-workspaces-btn" href="#">Workspaces</a></li>
+              <li><a id="wca-programs-btn" href="#">Programs</a></li>
+              <li><a id="wca-social-btn" href="#">Social campaigns</a></li>
+              <li><a id="wca-mobile-btn" href="#">Mobile</a></li>
+              <li><a id="wca-email-btn" href="#">Email</a></li>
+              <li><a id="wca-landingpage-btn" href="#">Landing Page</a></li>
+              <li><a id="wca-performancesnapshot-btn" href="#">Performance Snapshot</a></li>
+              <li><a id="wca-goals-btn" href="#">Goals</a></li>
+              <li><a id="wca-journeydesign-btn" href="#">Journey design</a></li>
+              <li><a id="wca-assetlibrary-btn" href="#">Asset library</a></li>
+              <li><a id="wca-score-btn" href="#">Score</a></li>
+              <li><a id="wca-alerts-btn" href="#">Alerts</a></li>
+              <li><a id="wca-audience-btn" href="#">Audience and segments</a></li>
+              <li><a id="wca-databaseadmin-btn" href="#">Database admin</a></li>
+              <li><a id="wca-resources-btn" href="#">Resources</a></li>
+              <li><a id="wca-devresources-btn" href="#">Developer resources</a></li>
             </ul>
           </li>
           <li id="cxa-btn" class="dropdown keep-open"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Watson Customer Experience Analytics</a>
@@ -103,6 +102,13 @@
               <li><a href="#">Link 3</a></li>
             </ul>
           </li>
+          <li id="ubx-btn" class="dropdown keep-open" draggable="true"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Universal Behavior Exchange</a>
+              <ul class="dropdown-menu yellow-ribbon" ng-click="$event.stopPropagation()" id="ubx-sortable">
+                <li><a href="#" id="ubx-dashboards">Overview</a></li>
+                <li><a href="#" id="ubx-workspaces">Workspaces</a></li>
+                <li><a href="#" id="ubx-da">Digital Analysis</a></li>
+              </ul>
+            </li>
         </ul>
       </div>
 
@@ -128,7 +134,7 @@
       </nav>-->
 
 
-      <div class="my-tools-container">
+      <div id="my-tools-container">
         <div class="my-tools-header">
           <svg class="svg" id="close-my-tools-btn" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 20 20" width="20px"><path d="M11.1,10l8.9,8.9L18.9,20L10,11.1L1.1,20L0,18.9L8.9,10L0,1.1L1.1,0L10,8.9L18.9,0L20,1.1L11.1,10z"></path></svg>
           <!--<label class="switch large-switch">
@@ -177,13 +183,13 @@
                           </label>
                       </div>
                       <a><div id="wca-show-sections" class="show-sections">
-                        <p id="wca-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
+                        <p id="wca-show-sections-label" style="padding-left: 20px;">-  Hide features</p>
                       </div></a>
                       <div id="wca-section-wrapper">
                         <table>
                           <tr>
                             <th style="width: 100px">In ribbon</th>
-                            <th>Sections</th>
+                            <th></th>
                             <th></th>
                           </tr>
                           <tr>
@@ -392,9 +398,9 @@
                           </tr>
                         </table>
                       </div> <!-- end wca-section-wrapper -->
-                      <a><div id="wca-show-addon" class="show-sections">
+                      <!--<a><div id="wca-show-addon" class="show-sections">
                         <p id="wca-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
-                      </div></a>
+                      </div></a>-->
                       <div id="wca-addon-wrapper">
                         <br><br><br>
                         Add-ons go in this section
@@ -422,14 +428,14 @@
                       </div>
 
                       <a><div id="cxa-show-sections" class="show-sections">
-                        <p id="cxa-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
+                        <p id="cxa-show-sections-label" style="padding-left: 20px;">-  Hide features</p>
                       </div></a>
 
                       <div id="cxa-section-wrapper">
                         <table>
                           <tr>
                             <th style="width: 100px">In ribbon</th>
-                            <th>Sections</th>
+                            <th></th>
                             <th></th>
                           </tr>
                           <tr>
@@ -579,9 +585,9 @@
                         </table>
                       </div><!-- end cxa-section-wrapper -->
 
-                      <a><div id="cxa-show-addon" class="show-sections">
+                      <!--<a><div id="cxa-show-addon" class="show-sections">
                         <p id="cxa-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
-                      </div></a>
+                      </div></a>-->
                       <div id="cxa-addon-wrapper">
                         <br><br><br>
                         Add-ons go in this section
@@ -614,14 +620,14 @@
                       </div>
 
                       <a><div id="mi-show-sections" class="show-sections">
-                        <p id="mi-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
+                        <p id="mi-show-sections-label" style="padding-left: 20px;">+ Show features</p>
                       </div></a>
 
                       <div id="mi-section-wrapper">
                         <table>
                           <tr>
                             <th style="width: 100px">In ribbon</th>
-                            <th>Sections</th>
+                            <th></th>
                             <th></th>
                           </tr>
                           <tr>
@@ -663,9 +669,9 @@
                         </table>
                       </div><!-- end mi-section-wrapper -->
 
-                      <a><div id="mi-show-addon" class="show-sections">
+                      <!--<a><div id="mi-show-addon" class="show-sections">
                         <p id="mi-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
-                      </div></a>
+                      </div></a>-->
                       <div id="mi-addon-wrapper">
                         <br><br><br>
                         Add-ons go in this section
@@ -693,14 +699,14 @@
                         </div>
 
                         <a><div id="realtime-show-sections" class="show-sections">
-                          <p id="realtime-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
+                          <p id="realtime-show-sections-label" style="padding-left: 20px;">+ Show features</p>
                         </div></a>
 
                         <div id="realtime-section-wrapper">
                           <table>
                             <tr>
                               <th style="width: 100px">In ribbon</th>
-                              <th>Sections</th>
+                              <th></th>
                               <th></th>
                             </tr>
                             <tr>
@@ -742,9 +748,9 @@
                           </table>
                         </div><!-- end realtime-section-wrapper -->
 
-                        <a><div id="realtime-show-addon" class="show-sections">
+                        <!--<a><div id="realtime-show-addon" class="show-sections">
                           <p id="realtime-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
-                        </div></a>
+                        </div></a>-->
                         <div id="realtime-addon-wrapper">
                           <br><br><br>
                           Add-ons go in this section
@@ -773,14 +779,14 @@
                           </div>
 
                           <a><div id="ubx-show-sections" class="show-sections">
-                            <p id="ubx-show-sections-label" style="padding-left: 20px;">-  Hide Sections</p>
+                            <p id="ubx-show-sections-label" style="padding-left: 20px;">-  Hide features</p>
                           </div></a>
 
                           <div id="ubx-section-wrapper">
                             <table>
                               <tr>
                                 <th style="width: 100px">In ribbon</th>
-                                <th>Sections</th>
+                                <th></th>
                                 <th></th>
                               </tr>
                               <tr>
@@ -846,9 +852,9 @@
                             </table>
                           </div><!-- end ubx-section-wrapper -->
 
-                          <a><div id="ubx-show-addon" class="show-sections">
+                          <!--<a><div id="ubx-show-addon" class="show-sections">
                             <p id="ubx-show-addon-label" style="border-top: 1px solid #5a5a5a; padding-left: 20px;">+  Show add-ons</p>
-                          </div></a>
+                          </div></a>-->
                           <div id="ubx-addon-wrapper">
                             <br><br><br>
                             Add-ons go in this section

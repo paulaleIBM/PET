@@ -157,6 +157,7 @@ body
   top: 45px;
   height: 100%;
   color: #ffffff;
+  overflow-y: scroll;
 }
 
 .sidebar-nav ul, ol {
@@ -219,7 +220,7 @@ body
   padding: 10px;
 }
 
-.my-tools-container {
+#my-tools-container {
   width: 1000px;
   height: auto;
   background: #464646;
@@ -228,7 +229,8 @@ body
   left: 280px;
   top: 45px;
   border-left: 1px solid #5a5a5a;
-  visibility: hidden;
+  /*visibility: hidden;*/
+  display: none;
   -webkit-transition: visibility 0s 0s;
   -moz-transition: visibility 0s 0.;
   transition: visibility 0s 0s;
@@ -237,12 +239,12 @@ body
 }
 
 
-.my-tools-container.is-visible {
+/*.my-tools-container.is-visible {
   visibility: visible;
   -webkit-transition: visibility 0s 0s;
   -moz-transition: visibility: 0s 0s;
   transition: visibility 0s 0s;
-}
+}*/
 
 .offering-tile {
   background: #5a5a5a;
@@ -391,7 +393,8 @@ body
 }
 
 #watson-marketing-tools {
-  visibility: hidden;
+  /*visibility: hidden;*/
+  display: none;
 }
 
 #watson-marketing-tools.is-visible {
