@@ -173,7 +173,25 @@ body
   padding-bottom: 20px;
 }
 
+.tertiary-menu {
+  list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+}
 
+.tertiary-menu li {
+  background-color: #5a5a5a;
+  margin: 0;
+  width: 98px;
+  height: 98px;
+  /*display: inline;*/
+}
+
+.tertiary-menu li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 
 #ubx-menu-item {
   border-left: 3px solid #7cc7ff;
@@ -182,7 +200,6 @@ body
 .my-tools-btn {
   background: #464646;
   background: #5a5a5a;
-  width: 280px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: left;
@@ -192,6 +209,7 @@ body
   /*margin: 10px;*/
   z-index: 100;
   position: fixed;
+  width: 280px;
 }
 
 .my-tools-btn span {
@@ -361,6 +379,7 @@ body
   width: 68px;
   float: right;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .open-link:hover {
@@ -377,6 +396,7 @@ body
   width: 121px;
   float: right;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .upgrade-link:hover {
